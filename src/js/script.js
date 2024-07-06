@@ -31,4 +31,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 3000);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close");
+    const thumbnails = document.querySelectorAll(".thumbnail");
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+
 
