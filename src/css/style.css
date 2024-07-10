@@ -282,7 +282,7 @@ main {
     background-color: var(--c_rosaClaro);
     border-radius: 15px;
     overflow: hidden;
-    width: 250px;
+    width: 200px;
     text-align: center;
     margin: 15px;
     padding: 15px;
@@ -299,8 +299,9 @@ main {
 
 .card2 .card-title1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 19px;
     color: var(--c_rosa_escuro);
+    text-transform: uppercase;
 }
 
 .card2 p {
@@ -382,6 +383,36 @@ main {
     color: var(--c_rosa);
     text-decoration: none;
     cursor: pointer;
+}
+
+.card3 {
+    background-color: var(--c_rosaClaro);
+    overflow: hidden;
+    width: 350px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border-bottom-left-radius: 70px; 
+}
+
+.card3 .card-image2 {
+    width: 15%;
+}
+.card3 .card-content2 {
+    padding: 16px;
+}
+
+.card3 .card-title2 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--c_marrom);
+}
+
+.card3 p {
+    color:var(--c_marrom);
+    font-size: 16px;
+    margin: 8px 0 0;
 }
 
 
