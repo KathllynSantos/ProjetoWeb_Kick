@@ -263,7 +263,7 @@ main {
 .container-foto-1 .foto img {
     border-radius: 50%;
     border: 15px solid var(--c_rosa);
-    width: 530px;
+    width: 500px;
     height: 500px;
     margin: 15px;
 }
@@ -514,138 +514,204 @@ p {
     color: var(--c_marrom);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        display: none;
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1820px;
     }
-
-    nav ul li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    #btt_menu:checked + #menu_icon + nav ul {
-        display: flex;
-    }
-
-    #menu_icon {
-        display: block;
-    }
-
-    .carousel img {
-        width: 100%;
-        height: auto;
-    }
-
-    .container-foto,
-    .container-foto-1 {
-        flex-direction: column;
-    }
-
-    .container-foto .foto,
-    .container-foto-1 .foto {
-        margin-bottom: 15px;
+    .card {
+        width: 300px;
+        height: 500px;
     }
 }
 
-/* Estilos do Carrossel */
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
 
-.carousel-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel img {
-    width: 100%;
-    height: auto;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.inf-produtos {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.container-foto,
-.container-foto-1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.container-foto .foto,
-.container-foto-1 .foto {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.container-foto .texto,
-.container-foto-1 .texto {
-    flex: 2;
-    margin: 0 10px;
-}
-.contato {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.mapa iframe {
-    width: 100%;
-    border: none;
-}
-
-
-@media (max-width: 768px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 1199px;
+    }
+    .card {
+        width: 150px;
+        height: 250px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-button {        
+        padding: 10px 15px;
+    }
+    .inf {
+        width: 150px;
+    }
     .footer-content {
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo img {
+        max-width: 150px;
+    }
+    .footer-loja, .footer-delivery, .footer-horario, .footer-contato {
+        margin: 10px 0;
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 991px;
+    }
+    .card {
+        width: 150px;
+        height: 250px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .inf {
+        width: 100px;
+    }
+    .card-button {        
+        padding: 10px 15px;
+    }
+
+    .container-foto, .container-foto-1 {
         flex-direction: column;
         align-items: center;
     }
-
-    .footer-loja,
-    .footer-delivery,
-    .footer-horario,
-    .footer-contato {
+    .container-foto .foto img, .container-foto-1 .foto img {
+        width: 100%;
+        height: auto;
+        border: 10px solid var(--c_rosa);
+    }
+    .container-foto p, .container-foto-1 p {
+        font-size: 20px;
+    }
+    .container-foto .foto img,
+        .container-foto-1 .foto img {
+            border-radius: 50%;
+            border: 10px solid var(--c_rosa);
+            width: 350px;
+            height: 350px;
+        }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo img {
+        max-width: 150px;
+    }
+    .footer-loja, .footer-delivery, .footer-horario, .footer-contato {
         margin: 10px 0;
     }
 }
 
-@media (max-width: 480px) {
-    nav ul li a {
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .inf-produtos, .inf-loja, .card2, .card3, .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .inf-produtos h2, .inf-loja h2, .card-title1, .card-title2 {
+        font-size: 24px;
+    }
+    .inf-produtos p, .inf-loja p, .card2 p, .card3 p {
         font-size: 14px;
     }
+    .container-foto .foto img, .container-foto-1 .foto img {
+        width: 100%;
+        height: auto;
+    }
+    
+}
 
-    .social-icons a img {
-        width: 24px;
-        height: 24px;
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .banner {
+        height: 200px;
+    }
+    .banner p, .banner-button {
+        font-size: 18px;
+    }
+    .container-foto, .container-foto-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-foto .foto img, .container-foto-1 .foto img {
+        width: 100%;
+        height: auto;
+        border: 5px solid var(--c_rosa);
+    }
+    .container-foto p, .container-foto-1 p {
+        font-size: 16px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .container-foto .foto img,
+        .container-foto-1 .foto img {
+            border-radius: 50%;
+            border: 10px solid var(--c_rosa);
+            width: 250px;
+            height: 250px;
+        }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo img {
+        max-width: 150px;
+    }
+    .footer-loja, .footer-delivery, .footer-horario, .footer-contato {
+        margin: 10px 0;
     }
 }
+    @media (max-width: 412px) {
+        .container {
+            max-width: 412px;
+
+        }
+        .card {
+            width: 100%;
+            height: auto;
+        }
+        .inf-produtos, .inf-loja, .card2, .card3, .footer-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .inf-produtos h2, .inf-loja h2, .card-title1, .card-title2 {
+            font-size: 20px;
+        }
+        .inf-produtos p, .inf-loja p, .card2 p, .card3 p {
+            font-size: 12px;
+        }
+        
+        .container-foto .foto img,
+        .container-foto-1 .foto img {
+            border-radius: 50%;
+            border: 10px solid var(--c_rosa);
+            width: 250px;
+            height: 250px;
+        }
+        .footer-logo img {
+            max-width: 100px;
+        }
+        .footer-loja, .footer-delivery, .footer-horario, .footer-contato {
+            margin: 10px 0;
+        }
+}
+

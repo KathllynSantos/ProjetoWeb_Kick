@@ -168,6 +168,55 @@ label[for="btt_menu"] {
     }
 }
 
+@media (max-width: 853px) {
+    header {
+        flex-direction: column;
+    }
+
+    #btt_menu {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    label[for="btt_menu"] {
+        display: block;
+        position: sticky;
+        top: 10px;
+    }
+
+    .logo img {
+        width: 180px;
+        height: 180px;
+    }
+    nav {
+        display: none;
+    }
+
+    nav li {
+        float: none;
+        text-align: center;
+    }
+
+    .dropdown_content {
+        position: relative;
+    }
+
+    .dropdown_content a {
+        text-align: center;
+    }
+
+    #btt_menu:checked ~ nav {
+        display: block;
+    }
+
+    ul {
+        display: block;
+    }
+}
+
 @media(max-width: 450px) {
     .logo img {
         padding: 15px;
