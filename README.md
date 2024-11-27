@@ -28,6 +28,16 @@ Durante o processo de construção, pude aprimorar meus conhecimentos em:
 - <b>Promoções para Datas Comemorativas:</b> Seção para divulgar promoções e novidades em datas especiais.
   
 - <b>Formulário de Contato: </b>Facilita a comunicação com os clientes para fazer pedidos ou tirar dúvidas.
+
+## Como Rodar o Projeto 
+
+1. Clone o repositório para sua máquina local:
+
+```bash
+   git clone https://github.com/KathllynSantos/ProjetoWeb_Kick
+  ```
+
+Abra o arquivo index.html em seu navegador para visualizar o site.
   
 ## Estilização Personalizada
 
